@@ -1,4 +1,8 @@
-class Student extends Person
+
+
+(function(objects){
+
+    class Student extends Person
     {
 
         constructor(name, age, studentID)
@@ -12,3 +16,9 @@ class Student extends Person
             console.log(`${this.name} with a studentID of ${this.studentID} is studying.`);
         }
     }
+    ////attaches the class Student to the objects namespaces
+    objects.Student = Student;
+})(objects || (objects = {}));
+
+
+
