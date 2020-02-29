@@ -2,11 +2,16 @@
 //IIFE - Immediately Invoked Function Expression
 // mean? -> anonymous self-executing function
 
+objects.
+
 let app;
 (function(app){
     // Declare Function Variables here...
     console.log("%cDeclaring Variables", "color: red;")
+    
+    
     let h2;
+    let tom;
     /**
      * Variable initialization in this function
      *
@@ -22,6 +27,11 @@ let app;
         app.h2 = h2;
 
        app.tom = "whatever";
+
+       tom = new objects.Student("Tom", 40 , "1234567");
+       tom.saysHello();
+       tom.isStudying();
+
         Main();
     }
 
